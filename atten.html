@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PK ENGINEERING ATTENDANCE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
+        rel="stylesheet">
+
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+      (function(){
+      emailjs.init({
+        publicKey: "iXQ-MrcYNNO02qQ8c",
+      });
+      })();
+      </script>
+
+</head>
+<body id="body1">
+    <style>
+#body1{
+    background: #000000;
+   
+}
+.card{
+    position: absolute;
+    width: 400px;
+    height: 380px;
+    background: white;
+    border-radius: 20px;
+    left: 550px;
+    top: 200px;
+    text-align: center;
+    display: block;
+
+}
+.card2{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    left: 550px;
+    top: 200px;
+    text-align: center;
+    padding-bottom: 80px;
+    display: none;
+
+}
+.card3{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    left: 550px;
+    top: 200px;
+    text-align: center;
+    padding-bottom: 80px;
+    display: none;
+
+}
+.lusername{
+position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 20px;
+font-family: 'orbitron',sans-serif;
+}
+.nlusername{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 20px;
+font-family: 'orbitron',sans-serif;
+}
+.newlusername{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 20px;
+font-family: 'orbitron',sans-serif;
+}
+.nluserem{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 20px;
+font-family: 'orbitron',sans-serif;
+top: 30px;
+}
+.luserpass{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 30px;
+font-family: 'orbitron',sans-serif;
+}
+.newluserpass1{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 35px;
+font-family: 'orbitron',sans-serif;
+}
+.newluserpass2{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 30px;
+font-family: 'orbitron',sans-serif;
+}
+.userenpass{
+    position: relative;
+background: #ffffff;
+color:#094da6;
+border:2px solid #094da6;
+outline: none;
+padding: 10px;
+width: 300px;
+height: 12px;
+border-radius: 10px;
+text-align: center;
+top: 30px;
+font-family: 'orbitron',sans-serif;
+top: 10px;
+}
+.loginbtn{
+    position: relative;
+background: #094da6;
+color:#ffffff;
+border: none;
+outline: none;
+padding: 10px;
+width: 320px;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+top: 50px;
+font-family: 'orbitron',sans-serif;
+font-size: 15px;
+}
+.optsntbtn{
+    position: relative;
+background: #094da6;
+color:#ffffff;
+border: none;
+outline: none;
+padding: 10px;
+width: 320px;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+top: 50px;
+font-family: 'orbitron',sans-serif;
+font-size: 15px;  
+}
+.verifyotp{
+    position: relative;
+background: #094da6;
+color:#ffffff;
+border: none;
+outline: none;
+padding: 10px;
+width: 320px;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+top: 20px;
+font-family: 'orbitron',sans-serif;
+font-size: 15px; 
+}
+.verifyotp:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+.optsntbtn:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+.loginbtn:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+.crtaccbtn:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+#ssd{
+color:#094da6;
+font-family: 'orbitron',sans-serif;
+background: white;
+font-size: 16px;
+position: relative;
+top: 65px;
+}
+.crtaccbtn{
+
+    position: relative;
+background: #094da6;
+color:#ffffff;
+border: none;
+outline: none;
+padding: 10px;
+width: 320px;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+top: 50px;
+font-family: 'orbitron',sans-serif;
+font-size: 15px;
+top: 70px;
+
+}
+.newcrtaccbtn{
+    position: relative;
+background: #094da6;
+color:#ffffff;
+border: none;
+outline: none;
+padding: 10px;
+width: 320px;
+height: 50px;
+border-radius: 10px;
+text-align: center;
+top: 50px;
+font-family: 'orbitron',sans-serif;
+font-size: 15px;
+top: 60px;
+
+}
+.newcrtaccbtn:hover{
+    font-size: 17px;
+    transition: 0.5s;
+}
+.verifydiv{
+    position: relative;
+    width: 350px;
+    height: 120px;
+    background: #000;
+    top: 70px;
+    background: transparent;
+    left: 25px;
+    display: none;
+}
+    </style>
+
+   
+    <h1 id="h" style="left:430px;letter-spacing: 20px;position: relative;color:aqua;font-size: 40px;font-family: 'orbitron',sans-serif;">PK ENGINEERING</h1>
+
+    <div id="card" class="card">
+<h2 style="color:#094da6;background: white;font-family: 'orbitron',sans-serif;">LOGIN HERE</h2>
+<input type="text" placeholder="USERNAME" id="lusername" class="lusername"/><br>
+<input type="password" placeholder="PASSWORD" id="luserpass" class="luserpass"/><br>
+<button id="loginbtn" class="loginbtn">LOGIN NOW</button><br>
+<h2 id="ssd">NEED TO CREATE NEW ACCOUNT?</h2>
+<button id="crtaccbtn" class="crtaccbtn">CREATE NEW ACCOUNT</button><br>
+
+</div>
+
+<div id="card2" class="card2">
+    <h2 style="color:#094da6;background: white;font-family: 'orbitron',sans-serif;">CREATE ACCOUNT</h2>
+    <input type="text" placeholder="USERNAME" id="nlusername" class="nlusername"/><br>
+    <input type="emial" placeholder="YOUE EMAIL ID HERE! " id="nluserem" class="nluserem"/><br>
+    <button id="optsntbtn" class="optsntbtn">SENT OTP TO BOSS</button><br>
+<div id="verifydiv" class="verifydiv">
+    <input type="password" placeholder="ENTER OTP HERE" id="userenpass" class="userenpass"/><br>
+    <button id="verifyotp" class="verifyotp">VERIFY OTP</button><br>
+
+</div>
+    </div>
+
+
+    <div id="card3" class="card3">
+        <h2 style="color:#094da6;background: white;font-family: 'orbitron',sans-serif;">CREATING ACCOUNT </h2>
+        <input type="text" placeholder="USERNAME" id="newlusername" class="newlusername"/><br>
+        <input type="password" placeholder="CREATE PASSWORD" id="newluserpass1" class="newluserpass1"/><br><br>
+        <input type="password" placeholder="CONFIRM PASSWORD" id="newluserpass2" class="newluserpass2"/><br>
+        <button id="newcrtaccbtn" class="newcrtaccbtn">CREATE NEW ACCOUNT</button><br>
+        
+        </div>
+
+        <script>
+
+            document.getElementById("crtaccbtn").addEventListener("click",()=>{
+                document.getElementById("card").setAttribute("style","display:none;")
+                document.getElementById("card2").setAttribute("style","display:block;")
+            
+            
+            });
+            
+            let otps="";
+            document.getElementById("crtaccbtn").addEventListener("click",()=>{
+                
+            })
+            
+            document.getElementById("optsntbtn").addEventListener("click",(e)=>{
+            e.preventDefault();
+            let nlusername=document.getElementById("nlusername").value;
+            let nluserem=document.getElementById("nluserem").value;
+            
+            if(nlusername !="" && nluserem !="" ){
+            document.getElementById("verifydiv").setAttribute("style","display:block;")
+            
+            
+            const name = nlusername
+                  const email = nluserem
+                  const boss_email="rameshvanitha407@gmail.com";
+                      otps = Math.floor(100000 + Math.random() * 900000); // 6-digit OTP
+                 console.log(" otp   created...");
+                
+                 var templateParams = {
+                    user_name: name,
+                    user_email:email,
+                    boss_email:boss_email,
+                    otp_code:otps
+            };
+            
+            
+            
+            emailjs.send('service_lp60fud', 'template_0rys8iq', templateParams).then(
+              (response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                console.log("otp send successfully to email:",boss_email);
+                alert("ASK BOSS FOR OTP")
+              },
+              (error) => {
+                console.log('FAILED...', error);
+              },
+            
+            );
+            
+            
+            }
+            else{
+                alert("ENTER THE INFORMATIONS!")
+            }
+            });
+            
+            document.getElementById("verifyotp").addEventListener("click",()=>{
+            let userenpass=document.getElementById("userenpass").value;
+            if(userenpass !=""){
+            if(userenpass == otps){
+                alert("ACCESS GRANDED!")
+                //remove
+                document.getElementById("card").setAttribute("style","display:none;")
+                document.getElementById("card2").setAttribute("style","display:none;")
+            
+            document.getElementById("card3").setAttribute("style","display:block;")
+            
+            }
+            
+            }
+            else{
+                alert("ENTER THE OTP")
+            }
+            });
+            
+            
+            </script>
+<!-- -----------------------------------------after verificaltion------------------------- -->
+<style>
+.maindivapp{
+    position: relative;
+background: rgb(228, 224, 224);
+width:100%;
+height:700px;
+top: 0px;
+display: none;
+padding: 20px;
+}
+.weluser{
+    font-family: 'orbitron',sans-serif;
+}
+.time{
+    
+    position: relative;
+    width: auto;
+    height: 100px;
+    color:rgb(19, 74, 2);
+    top:0px;
+}
+
+#tim{
+    font-family: 'orbitron',sans-serif;
+
+}
+#mkat{
+    position:relative;
+    border:none;
+    background: green;
+    color:white;
+    font-family: 'orbitron',sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+
+}
+.mkattntb{
+    position:relative;
+    border:none;
+    background: green;
+    color:white;
+    font-family: 'orbitron',sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    top: -20px;
+}
+.pacetoatt{
+    position: relative;
+    background: #c6c1c1;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+#txlat{
+    position: absolute;
+            border: none;
+
+            width: 250px;
+            height: 30px;
+            text-align: center;
+            border-radius: 10px;
+            left: 200px;
+            outline: none;
+}
+#txlog{
+    position: absolute;
+            border: none;
+
+            width: 250px;
+            height: 30px;
+            text-align: center;
+            border-radius: 10px;
+            left: 200px;
+            outline: none;
+}
+</style>
+<div id="maindivapp" class="maindivapp">
+    <h1 style="left:430px;letter-spacing: 20px;position: relative;color:rgb(60, 87, 87);font-size: 40px;font-family: 'orbitron',sans-serif;">PK ENGINEERING</h1><BR>
+<div  id="divtoshnm" class="divtoshnm"></div>
+<div id="time" class="time">
+</div>
+<button id="mkat">MARK TODAY'S ATTENDANCE</button>
+<br><br>
+<div id="pacetoatt" class="pacetoatt">
+    <h2 id="session" STYLE="position: relative;font-family: 'orbitron',sans-serif;top:-20px"></h2>
+    <br>
+    <h3 id="usrnm" STYLE="position: relative;font-family: 'orbitron',sans-serif;top:-20px"></h3>
+    <br>
+    <button id="mkattntb" class="mkattntb">MARK ATTENDANCE</button>
+</div>
+   <input type="text" id="txlat" placeholder="latitude"><br><br>
+   <input type="text" id="txlog" placeholder="longitude">
+
+</div>
+
+<script type="module" src="./attend.js" defer></script>
+</body>
+</html>
